@@ -1,0 +1,5 @@
+rootProject.name = 'AppGerenciamentoVendas'
+
+include ':app'
+include ':lib'
+
