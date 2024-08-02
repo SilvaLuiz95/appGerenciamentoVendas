@@ -68,11 +68,11 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\app.jar;%APP_HOME%\lib\lib.jar;%APP_HOME%\lib\postgresql-42.7.3.jar;%APP_HOME%\lib\checker-qual-3.42.0.jar
+set CLASSPATH=%APP_HOME%\lib\app.jar;%APP_HOME%\lib\lib.jar;%APP_HOME%\lib\jbcrypt-0.4.jar;%APP_HOME%\lib\postgresql-42.7.3.jar;%APP_HOME%\lib\checker-qual-3.42.0.jar
 
 
 @rem Execute app
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%"  %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%" AppGerenciamentoVendas.Main %*
 
 :end
 @rem End local scope for the variables with windows NT shell
